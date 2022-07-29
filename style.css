@@ -1,0 +1,101 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* .navbar{
+    margin-bottom: 50px !important;
+} */
+
+.navbar-brand{
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.navbar-nav-ul li a {
+    margin: 0 10px;
+}
+
+/* carousal start */
+
+.carousel-inner{
+    position: relative;
+}
+
+.carousel-item::before{
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: #000000a1;
+}
+.carousel-item img{
+    height:100vh;
+}
+
+.carousel-caption{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.carousel-caption h5{
+    font-size: 54px;
+}
+
+/* course start */
+
+.course_content_wrapper{
+    margin: 10px 0;
+}
+
+/* ready to join start */
+.ready{
+    background: rgb(3, 126, 202);
+    padding: 40px;
+}
+
+.student_item{
+    margin: 20px 0;
+    border: 1px solid rgb(221, 217, 217);
+}
+.student_item img{
+    width: 100%;
+}
+.student_item h3{
+    font-size: 23px;
+    margin-bottom: 3px;
+}
+.student_item h3,p{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+/* media query start */
+@media screen and (max-width:1200px) {
+    .carousel-caption{
+        position: absolute;
+        top: 50%;
+        left: 20%;
+        transform: translate(-0%, -0%);
+    }
+  
+  .carousel-caption h5{
+    font-size: 35px;
+  }
+
+}
+
+@media screen and (max-width:500px) {
+   .carousel-caption h5{
+    font-size: 25px;
+   }
+}
+/* media query end */
